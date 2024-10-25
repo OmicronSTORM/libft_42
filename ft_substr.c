@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:37:45 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/26 01:20:42 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/10/26 01:29:18 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return(new_string);
 }
 
-int	main()
-{
-	printf("%s\n", ft_substr("Bien le bonjour", 0, 10));
-	return(0);
-}
+// int	main()
+// {
+// 	printf("%s\n", ft_substr("Bien le bonjour", 0, 10));
+// 	return(0);
+// }
