@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 01:28:33 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/26 14:10:55 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/10/26 15:34:26 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
+	if (!s1 && !s2)
+		return (0);
 	final_string = malloc(sizeof(char *) * ( ft_strlen((char *)s1) 
 					+ ft_strlen((char *)s2)));
 	if (!final_string)
 		return (0);
-	while (s1[i] - 1)
+	while (s1[i])
 	{
 		final_string[i] = s1[i];
 		i++;
@@ -35,11 +37,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		i++;
 		j++;
 	}
+	final_string[i] = '\0';
 	return (final_string);
 }
-
+/*
 int	main()
 {
-	printf("%s", ft_strjoin("Justin ", "Owoundi Nlate"));
+	printf("%s\n", ft_strjoin("Justin ", "Owoundi Nlate"));
 	return (0);
-}
+}*/
