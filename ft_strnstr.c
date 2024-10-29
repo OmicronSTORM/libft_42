@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:47:04 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/25 16:29:38 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/10/28 16:07:24 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 
 	x = 0;
 	y = 0;
-	len_d = ft_strlen((char *)to_find);
+	len_d = ft_strlen(to_find);
 	if (to_find[y] == '\0')
 		return ((char *)str);
 	while (str[x] != '\0' && (x < len))

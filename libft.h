@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 17:58:32 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/26 01:31:06 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:44:55 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_strchr(const char *str, int c);
 char	*ft_strdup(const char *s1);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
-size_t	ft_strlen(char *str);
+size_t	ft_strlen(const char *str);
 int		ft_strncmp(char *s1, char *s2, size_t n);
 char	*ft_strnstr(const char *str, const char *to_find, size_t len);
 char	*ft_strrchr(const char *s, int c);
@@ -48,5 +48,7 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_itoa(int n);
 
 #endif

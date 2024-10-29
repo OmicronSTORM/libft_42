@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:37:45 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/26 01:29:18 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/10/28 16:07:06 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	j = start;
 	if(!s)
 		return (0);
-	if (j > ft_strlen((char *)s))
+	if (j > ft_strlen(s))
 		return (ft_strdup(""));
-	if (len > ft_strlen((char *)s + j))
-		len = (ft_strlen((char *)s + j));
+	if (len > ft_strlen(s + j))
+		len = (ft_strlen(s + j));
 	new_string = malloc(sizeof(char *) * (len + 1));
 	if (!new_string)
 		return (0);

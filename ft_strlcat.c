@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 18:04:01 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/24 19:28:28 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/10/28 16:08:01 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	while (dst[i])
 		i++;
 	if (dstsize <= i)
-		return (ft_strlen((char *)src) + dstsize);
+		return (ft_strlen(src) + dstsize);
 	while (i < dstsize - 1 && src[j])
 	{
 		dst[i] = src[j];
@@ -33,7 +33,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		j++;
 	}
 	dst[i] = '\0';
-	return (ft_strlen((char *)src) + len_d);
+	return (ft_strlen(src) + len_d);
 }
 
 // int main()
