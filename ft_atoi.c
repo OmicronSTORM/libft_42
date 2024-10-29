@@ -6,16 +6,24 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 18:40:11 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/29 17:14:21 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/10/29 17:35:08 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+static int	overflow_return(int sign)
+{
+	if (sign == -1)
+		return (0);
+	return (-1);
+}
 
 int	ft_atoi(char *str)
 {
 	int	i;
-	int	res;
+	long long	res;
 	int	sign;
 
+	res = 0;
 	i = 0;
 	sign = 1;
 	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
@@ -28,6 +36,8 @@ int	ft_atoi(char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
+		if (res * 10 < 0)
+			return (overflow_return(sign));
 		res *= 10;
 		res += str[i] - '0';
 		i++;
