@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 15:04:00 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/02 17:38:00 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/02 17:40:17 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,17 +105,17 @@ char	**ft_split(char const *s, char c)
 	return (tab);
 }
 
-int	main()
-{
-	char const str[] = "Bien le bonjour";
-	char c = ' ';
-	char **result;
-	result = ft_split(str, c);
-	int i = 0;
-	while (result[i])
-	{
-		printf("%s\n", result[i]);
-		i++;
-	}
-	return (0);
-}
+// int	main()
+// {
+// 	char const str[] = "Bien le bonjour";
+// 	char c = ' ';
+// 	char **result;
+// 	result = ft_split(str, c);
+// 	int i = 0;
+// 	while (result[i])
+// 	{
+// 		printf("%s\n", result[i]);
+// 		i++;
+// 	}
+// 	return (0);
+// }

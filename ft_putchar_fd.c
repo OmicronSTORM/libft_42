@@ -6,9 +6,11 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:59:55 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/29 18:25:36 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/02 17:42:27 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {
