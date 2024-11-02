@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 15:04:00 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/02 17:40:17 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/02 18:31:48 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static char	**alloc(char const *str, char c)
 
 static char	*dup_word(char const *str, int start, char c)
 {
-	int 	i;
+	int		i;
 	char	*result;
 	size_t	len_word;
 
@@ -52,7 +52,7 @@ static char	*dup_word(char const *str, int start, char c)
 	while (str[i] != c && str[i])
 	{
 		len_word++;
-		i++;	
+		i++;
 	}
 	i = 0;
 	result = malloc(sizeof(char) * (len_word + 1));
@@ -65,7 +65,7 @@ static char	*dup_word(char const *str, int start, char c)
 		start++;
 	}
 	result[i] = '\0';
-	return(result);
+	return (result);
 }
 
 static char	**ft_free(char **pointer, size_t index)
@@ -78,13 +78,13 @@ static char	**ft_free(char **pointer, size_t index)
 
 char	**ft_split(char const *s, char c)
 {
-	size_t 	i_word;
-	size_t 	i_tab;
+	size_t	i_word;
+	size_t	i_tab;
 	char	**tab;
 
 	i_word = 0;
 	i_tab = 0;
-	tab = alloc(s,c);
+	tab = alloc(s, c);
 	if (!tab)
 		return (0);
 	while (s[i_word])

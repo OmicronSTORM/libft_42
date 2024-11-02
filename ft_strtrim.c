@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 14:06:14 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/28 15:02:30 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/02 18:34:26 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	size_t	i;
 	char	*res;
-	
+
 	start = 0;
 	end = ft_strlen(s1);
 	i = 0;

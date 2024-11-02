@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:37:45 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/28 16:07:06 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/02 18:34:44 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	i = 0;
 	j = start;
-	if(!s)
+	if (!s)
 		return (0);
 	if (j > ft_strlen(s))
 		return (ft_strdup(""));
@@ -35,7 +35,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		i++;
 	}
 	new_string[j] = '\0';
-	return(new_string);
+	return (new_string);
 }
 
 // int	main()

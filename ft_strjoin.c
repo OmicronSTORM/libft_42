@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 01:28:33 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/28 16:08:15 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/02 18:33:05 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	if (!s1 && !s2)
 		return (0);
-	final_string = malloc(sizeof(char *) * ( ft_strlen(s1) 
-					+ ft_strlen(s2)));
+	final_string = malloc(sizeof(char *) * (ft_strlen(s1)
+				+ ft_strlen(s2)));
 	if (!final_string)
 		return (0);
 	while (s1[i])
