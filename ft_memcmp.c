@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 14:14:16 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/23 15:31:02 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/04 20:46:25 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,13 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	tmp_s1 = ((unsigned char *)s1);
 	tmp_s2 = ((unsigned char *)s2);
 	i = 0;
-	while (tmp_s1[i] && tmp_s2[i] && tmp_s1[i] == tmp_s2[i] && (i < n))
+	while (i < n)
+	{
+		if (tmp_s1[i] != tmp_s2[i])
+			return (tmp_s1[i] - tmp_s2[i]);
 		i++;
-	if (i == n)
-		return (0);
-	return (tmp_s1[i] - tmp_s2[i]);
+	}
+	return (0);
 }
 
 /*int main()

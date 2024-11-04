@@ -6,53 +6,56 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 14:06:14 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/02 18:34:26 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/04 18:54:44 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	tri(char const *sup, int c)
+char	*tri(const char *sup, int c)
 {
-	int	i;
+	char	ch;
 
-	i = 0;
-	while (sup[i])
+	ch = (char)c;
+	while (*sup != '\0')
 	{
-		if (sup[i] == c)
-			return (1);
-		i++;
+		if (*sup == ch)
+			return ((char *)sup);
+		sup++;
 	}
-	return (0);
+	if (ch == '\0')
+		return ((char *)sup);
+	return (NULL);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
-	size_t	i;
 	char	*res;
+	size_t	len;
 
 	start = 0;
-	end = ft_strlen(s1);
-	i = 0;
-	if (!s1 || !set)
-		return (0);
-	while (tri(set, s1[start]))
+	if (s1 == NULL || set == NULL)
+		return (NULL);
+	while (tri(set, s1[start]) && s1[start])
 		start++;
-	while (tri(set, s1[end - 1]))
+	end = ft_strlen(s1);
+	while (end > start && tri(set, s1[end - 1]))
 		end--;
-	res = malloc(sizeof(char *) * (end - start + 1));
+	len = end - start;
+	res = malloc(sizeof(char) * (len + 1));
 	if (!res)
 		return (0);
-	while (start < end)
-		res[i++] = s1[start++];
-	res[i] = '\0';
+	if (len == 0)
+		res[0] = '\0';
+	else
+		ft_strlcpy(res, s1 + start, len + 1);
 	return (res);
 }
 
-/*int	main()
-{
-	printf("%s", ft_strtrim("adhdjustinadhdaadh", "adh"));
-	return (0);
-}*/
+// int	main()
+// {
+// 	printf("%s\n", ft_strtrim("", ""));
+// 	return (0);
+// }
