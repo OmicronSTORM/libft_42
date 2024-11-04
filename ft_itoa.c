@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:04:03 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/02 18:29:55 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/04 21:36:02 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_itoa(int n)
 
 	number = n;
 	i = count_size(n);
-	res = malloc(sizeof(char *) * (i + 1));
+	res = malloc(sizeof(char) * (i + 1));
 	if (!res)
 		return (0);
 	if (number == 0)
