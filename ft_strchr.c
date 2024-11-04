@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 17:06:15 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/23 15:39:21 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/02 20:27:25 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strchr(const char *str, int c)
 			return ((char *)str + x);
 		x++;
 	}
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 		return ((char *)str + x);
 	return (0);
 }

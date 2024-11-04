@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 15:04:00 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/02 18:31:48 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/04 14:59:31 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,10 @@ static char	*dup_word(char const *str, int start, char c)
 static char	**ft_free(char **pointer, size_t index)
 {
 	while (index > 0)
+	{
 		free (pointer[--index]);
+		index--;
+	}
 	free (pointer);
 	return (0);
 }
