@@ -6,13 +6,13 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:04:03 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/05 18:47:14 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/06 14:42:31 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	count_size(long number)
+static size_t	count_size(long number)
 {
 	size_t	pos;
 

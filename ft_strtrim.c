@@ -6,13 +6,13 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 14:06:14 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/05 15:58:21 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/06 14:43:19 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*tri(const char *sup, int c)
+static char	*tri(const char *sup, int c)
 {
 	char	ch;
 
