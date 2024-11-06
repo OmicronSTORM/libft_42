@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:47:04 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/28 16:07:24 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/05 15:56:53 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,11 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 	}
 	return (0);
 }
-/*#include <string.h>
+// #include <string.h>
 
-int	main()
-{
-	printf("%s\n", ft_strnstr("lorem ipsum dolor sit amet", "lorem", 15));
-	printf("%s\n", strnstr("lorem ipsum dolor sit amet", "lorem", 15));
-	return(0);
-}*/
+// int	main()
+// {
+// 	printf("%s\n", ft_strnstr("lorem ipsum dolor sit amet", "lorem", 15));
+// 	printf("%s\n", strnstr("lorem ipsum dolor sit amet", "lorem", 15));
+// 	return(0);
+// }

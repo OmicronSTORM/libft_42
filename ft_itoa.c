@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:04:03 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/04 21:36:02 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/05 18:47:14 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,9 +60,10 @@ char	*ft_itoa(int n)
 	return (res);
 }
 
+// #include <stdio.h>
+
 // int main()
 // {
-// 	int nbr = 0;
-// 	printf("%s\n", ft_itoa(nbr));
+// 	printf("%d\n", ft_itoa(-(-1)));
 // 	return(0);
 // }

@@ -6,9 +6,11 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 17:06:15 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/02 20:27:25 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/06 13:22:56 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {
@@ -26,10 +28,12 @@ char	*ft_strchr(const char *str, int c)
 	return (0);
 }
 
-/*#include <stdio.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int main()
-{
-    printf("%s", ft_strchr("eofef frgi fdfd lsl", '\0'));
-    return(0);
-}*/
+// int main()
+// {
+//     printf("%s", ft_strchr(NULL, 'c'));
+// 	printf("%s", strchr(NULL, 'c'));
+//     return(0);
+// }

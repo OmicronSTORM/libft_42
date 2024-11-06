@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 18:04:01 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/28 16:08:01 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/06 13:08:31 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 // int main()
 // {
-//     const char src[] = "a";
-//     char dst[] = "lorem";
+//     const char src[] = "df";
+//     char dst[30] = "lom";
 //     size_t dstsize;
-//
-//     dstsize = 15;
-//     printf("%zu\n%s\n", ft_strlcat(dst, src, dstsize), dst);
+
+//     dstsize = 14;
+//     //printf("%zu\n%s\n", ft_strlcat(dst, src, dstsize), dst);
 //     printf("%lu\n%s\n", strlcat(dst, src, dstsize), dst);
 //     return(0);
 // }

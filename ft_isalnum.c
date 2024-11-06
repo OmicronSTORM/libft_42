@@ -6,9 +6,11 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:49:48 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/24 13:29:33 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/06 13:21:47 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {

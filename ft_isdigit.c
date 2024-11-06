@@ -6,9 +6,11 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:25:43 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/23 15:23:19 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/06 13:22:01 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

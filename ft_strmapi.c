@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 14:54:10 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/02 18:33:43 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/05 17:53:47 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*iter;
 	size_t	s_lenght;
 
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	i = 0;
 	s_lenght = ft_strlen(s);

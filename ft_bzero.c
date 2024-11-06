@@ -6,11 +6,11 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 19:17:37 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/23 15:18:55 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/06 13:21:17 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t len)
 {
@@ -24,14 +24,16 @@ void	ft_bzero(void *s, size_t len)
 	}
 }
 
-/*
-#include <stdio.h>
-#include <libc.h>
+// #include <stdio.h>
+// #include <libc.h>
 
-int main(void)
-{
-    char str[] = "Bien le bonjour peuple";
-    ft_bzero(str, 5);
-    printf("%s\n", str);
-    printf("%s\n", bzero(str, 5));
-}*/
+// int main(void)
+// {
+// 	char	*st;
+//     char str[] = "Bien le bonjour peuple";
+// 	st = NULL;
+//     ft_bzero(str, 5);
+// 	// bzero(st, 10);
+//     printf("%s\n", str);
+//     printf("%s\n", bzero(str, 10));
+// }

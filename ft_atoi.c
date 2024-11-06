@@ -6,9 +6,11 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 18:40:11 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/02 18:19:01 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/06 13:21:09 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static int	overflow_return(int sign)
 {
@@ -17,7 +19,7 @@ static int	overflow_return(int sign)
 	return (-1);
 }
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int			i;
 	long long	res;
@@ -45,8 +47,6 @@ int	ft_atoi(char *str)
 	return (sign * res);
 }
 
-// #include <stdio.h>
-// #include <stdlib.h>
 // int	main(int ac, char **av)
 // {
 // 	int	i = 1;

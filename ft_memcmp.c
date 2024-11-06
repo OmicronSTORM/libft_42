@@ -6,13 +6,11 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 14:14:16 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/04 20:46:25 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/06 13:22:28 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -32,9 +30,11 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-/*int main()
-{
-    printf("%d\n", ft_memcmp("b", "a", 7));
-    printf("%d\n", memcmp("b", "a", 7));
-    return(0);
-}*/
+// int main()
+// {
+// 	char a[] = "";
+// 	char b[] = "df";
+//     printf("%d\n", ft_memcmp(a, b, 2));
+//     printf("%d\n", memcmp(a, b, 2));
+//     return(0);
+// }

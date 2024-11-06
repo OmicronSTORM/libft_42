@@ -6,13 +6,11 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:16:58 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/02 21:54:11 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/06 13:22:19 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -30,10 +28,9 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-/*
-int main()
-{
-    printf("%s\n", ft_memchr("le vid1e est rempli", '1', 10));
-    //printf("%s\n", memchr("le vid1e est rempli", '1', 10));
-    return(0);
-}*/
+// int main()
+// {
+//     printf("%s\n", ft_memchr("NULL", '1', 10));
+//     printf("%s\n", memchr("NULL", '1', 10));
+//     return(0);
+// }

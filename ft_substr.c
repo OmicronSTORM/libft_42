@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 18:37:45 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/04 21:30:24 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/05 15:13:41 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	j = start;
 	if (!s)
-		return (0);
+		return (NULL);
 	if (j > ft_strlen(s))
 		return (ft_strdup(""));
 	if (len > ft_strlen(s + j))

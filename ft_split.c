@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 15:04:00 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/04 17:41:46 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/05 18:46:14 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,6 @@ static size_t	count_word(char const *str, char c)
 	}
 	return (word);
 }
-
-// static char	**alloc(char const *str, char c)
-// {
-// 	char	**ptr_alloc;
-
-// 	ptr_alloc = malloc(sizeof(char *) * count_word(str, c) + 1);
-// 	if (!ptr_alloc)
-// 		return (NULL);
-// 	return (ptr_alloc);
-// }
 
 static char	*dup_word(char const *str, int start, char c)
 {
@@ -76,18 +66,13 @@ static char	**ft_free(char **pointer, size_t index)
 	return (0);
 }
 
-	// tab = alloc(s, c); 
-char	**ft_split(char const *s, char c)
+static char	**index_word(char const *s, char c, char **tab)
 {
 	size_t	i_word;
 	size_t	i_tab;
-	char	**tab;
 
-	tab = malloc(sizeof(char *) * (count_word(s, c) + 1));
 	i_word = 0;
 	i_tab = 0;
-	if (!tab)
-		return (NULL);
 	while (s[i_word])
 	{
 		while (s[i_word] == c && s[i_word])
@@ -106,12 +91,27 @@ char	**ft_split(char const *s, char c)
 	return (tab);
 }
 
+char	**ft_split(char const *s, char c)
+{
+	char	**tab;
+
+	if (!s)
+		return (NULL);
+	tab = malloc(sizeof(char *) * (count_word(s, c) + 1));
+	if (!tab)
+		return (NULL);
+	tab = index_word(s, c, tab);
+	return (tab);
+}
+
 // int	main()
 // {
-// 	char const str[] = "Bien le bonjour";
+// 	char const str[] = "681 035 0 1546";
 // 	char c = ' ';
 // 	char **result;
 // 	result = ft_split(str, c);
+// 	if (!result)
+// 		return (1);
 // 	int i = 0;
 // 	while (result[i])
 // 	{

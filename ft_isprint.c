@@ -6,9 +6,11 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 18:09:57 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/23 15:52:12 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/06 13:22:03 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

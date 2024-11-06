@@ -6,13 +6,11 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:13:24 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/10/24 15:27:30 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/06 13:23:12 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <libc.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
@@ -37,20 +35,19 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (i);
 }
 
-/*int main()
-{
-    const char  *src;
-    
-    char        dst[3];
-    size_t      dstsize;
-    char        *str;
+// int main()
+// {
+//     const char  *src;
+//     char        dst[3];
+//     size_t      dstsize;
+//     char        *str;
 
-    dstsize = 0;
-    src = "coucou\0";
-    printf("%zu\n%s\n", ft_strlcpy(dst, src, dstsize), dst);
-    printf("%lu\n%s\n", strlcpy(dst, src, dstsize), dst);
-    str = "coucou";
-    str++;
-    str++;
-    return (0);
-}*/
+//     dstsize = 0;
+//     src = NULL;
+//     printf("%zu\n%s\n", ft_strlcpy(dst, src, dstsize), dst);
+//     printf("%lu\n%s\n", strlcpy(dst, src, dstsize), dst);
+//     str = "coucou";
+//     str++;
+//     str++;
+//     return (0);
+// }
