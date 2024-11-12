@@ -1,31 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/11 14:35:41 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/11 15:06:52 by jowoundi         ###   ########.fr       */
+/*   Created: 2024/11/12 18:19:45 by jowoundi          #+#    #+#             */
+/*   Updated: 2024/11/12 18:47:31 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list  *ft_lstlast(t_list *lst)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-    t_list  *list;
-
-    list = lst;
-    if (!list)
-        return (list);
-    while (list)
-    {
-        if (list != NULL)
-        {
-            list = list->next;
-        }
-        return (list);
-    }
-    return (NULL);
+	t_list	*list;
+	t_list	*tmp;
+	
+	if (!lst || !f || !del)
+		return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 17:58:32 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/06 13:23:47 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/12 18:19:00 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,5 +58,11 @@ char	**ft_split(char const *s, char c);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+t_list  *ft_lstlast(t_list *lst);
+int		ft_lstsize(t_list *lst);
+void	ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstdelone(t_list *lst, void (*del)(void*));
+void	ft_lstclear(t_list **lst, void (*del)(void *));
+void    ft_lstiter(t_list *lst, void (*f)(void *));
 
 #endif
