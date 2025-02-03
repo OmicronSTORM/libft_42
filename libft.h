@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 17:58:32 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/13 13:25:33 by jowoundi         ###   ########.fr       */
+/*   Updated: 2025/01/28 16:08:34 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,20 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <string.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 5
+# endif
+
+# if BUFFER_SIZE > 8000000
+#  undef BUFFER_SIZE
+#  define BUFFER_SIZE 10
+# endif
+
+# if BUFFER_SIZE < 0
+#  undef BUFFER_SIZE
+#  define BUFFER_SIZE 10
+# endif
 
 typedef struct s_list
 {
@@ -58,5 +72,9 @@ char	**ft_split(char const *s, char c);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+char	*get_next_line(int fd);
+char	*ft_strjoin_gnl(char *s1, char const *s2);
+char	*ft_strchr_gnl(const char *str, int c);
+char	*ft_strdup_gnl(const char *s1);
 
 #endif

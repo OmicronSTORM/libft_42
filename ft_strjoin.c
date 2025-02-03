@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 01:28:33 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/12/02 14:08:37 by jowoundi         ###   ########.fr       */
+/*   Updated: 2025/02/03 13:59:00 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (final_string);
 }
 
-int	main()
-{
-	printf("%s\n", ft_strjoin("ie", "bonsoir"));
-	return (0);
-}
+// int	main()
+// {
+// 	printf("%s\n", ft_strjoin("ie", "bonsoir"));
+// 	return (0);
+// }

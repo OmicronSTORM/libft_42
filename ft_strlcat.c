@@ -6,11 +6,10 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 18:04:01 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/06 13:08:31 by jowoundi         ###   ########.fr       */
+/*   Updated: 2025/01/28 15:30:26 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libc.h>
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
