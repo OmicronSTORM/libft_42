@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 17:58:32 by jowoundi          #+#    #+#             */
-/*   Updated: 2025/01/28 16:08:34 by jowoundi         ###   ########.fr       */
+/*   Updated: 2025/02/04 18:19:55 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <string.h>
+# include <stdarg.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 5
@@ -76,5 +77,14 @@ char	*get_next_line(int fd);
 char	*ft_strjoin_gnl(char *s1, char const *s2);
 char	*ft_strchr_gnl(const char *str, int c);
 char	*ft_strdup_gnl(const char *s1);
+int		ft_putchar_printf(int c);
+int		ft_printf(const char *str, ...);
+int		ft_percent(void);
+int		ft_putstr_printf(char *str);
+int		ft_putnbr_printf(int nb);
+int		ft_hexlower(unsigned int nb);
+int		ft_hexupper(unsigned int nb);
+int		ft_unsigned(unsigned int nb);
+int		ft_putptr(unsigned long ptr);
 
 #endif
